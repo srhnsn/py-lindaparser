@@ -48,6 +48,8 @@ def main():
     print("\n\nHauptstudium:\n")
     print_average_grade(exams_h)
 
+    print_total_ects(exams_g + exams_h)
+
 
 def print_average_grade(exams):
     ects_total = 0
@@ -103,6 +105,18 @@ def print_header():
         "ECTS".ljust(COL2_WIDTH),
         "Note".ljust(COL3_WIDTH),
         "-" * ROW_LENGTH
+    ))
+
+
+def print_total_ects(exams):
+    ects = 0
+
+    for exam in exams:
+        ects += exam["ects"]
+
+    print("\n\n{} {}".format(
+        "ECTS Grundstudium und Hauptstudium".ljust(COL1_WIDTH),
+        format_float(ects).ljust(COL2_WIDTH)
     ))
 
 
