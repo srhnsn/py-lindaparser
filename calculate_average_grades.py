@@ -87,13 +87,13 @@ def print_average_grade(exams):
     
     print("{}\n{} {} {}".format(
         "-" * ROW_LENGTH,
-        "Insgesamt".ljust(COL1_WIDTH),
+        "Summe".ljust(COL1_WIDTH),
         ects_total.ljust(COL2_WIDTH),
         grades_total.ljust(COL3_WIDTH)
     ))
     
     print("{} {} {}".format(
-        "Durchschnitt".ljust(COL1_WIDTH),
+        "Mittelwert".ljust(COL1_WIDTH),
         "".ljust(COL2_WIDTH),
         average.ljust(COL3_WIDTH)
     ))
