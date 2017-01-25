@@ -1,7 +1,5 @@
 import os
-import socket
 import sys
-import time
 
 import lindaparser
 
