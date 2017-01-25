@@ -10,9 +10,9 @@ FIELD_USERNAME = "asdf"
 PATTERN_ASI = r'''asi=([^"^&]+)'''
 PATTERN_GRADES = r'''<tr>''' + r'''\s*<td[^>]*>(.+?)</td>\s*''' * 10 + r'''</tr>'''
 REQUEST_TIMEOUT = 20
-URL_EXAM_OVERVIEW = r"https://linda.hs-heilbronn.de/qisstudent/rds?state=change&type=1&moduleParameter=studyPOSMenu&nextdir=change&next=menu.vm&subdir=applications&xml=menu&purge=y&navigationPosition=functions%2CstudyPOSMenu&breadcrumb=studyPOSMenu&topitem=functions&subitem=studyPOSMenu"
-URL_GRADES = r"https://linda.hs-heilbronn.de/qisstudent/rds?state=notenspiegelStudent&next=list.vm&nextdir=qispos/notenspiegel/student&createInfos=Y&struct=auswahlBaum&nodeID=auswahlBaum%7Cabschluss%3Aabschl%3D84%2Cstgnr%3D1&expand=0&asi={asi}"
-URL_LOGIN = r"https://linda.hs-heilbronn.de/qisstudent/rds?state=user&type=1&category=auth.login&startpage=portal.vm&breadCrumbSource=portal"
+URL_EXAM_OVERVIEW = r"https://stud.zv.hs-heilbronn.de/qisstudent/rds?state=change&type=1&moduleParameter=studyPOSMenu&nextdir=change&next=menu.vm&subdir=applications&xml=menu&purge=y&navigationPosition=functions%2CstudyPOSMenu&breadcrumb=studyPOSMenu&topitem=functions&subitem=studyPOSMenu"
+URL_GRADES = r"https://stud.zv.hs-heilbronn.de/qisstudent/rds?state=notenspiegelStudent&next=list.vm&nextdir=qispos/notenspiegel/student&createInfos=Y&struct=auswahlBaum&nodeID=auswahlBaum%7Cabschluss%3Aabschl%3D84%2Cstgnr%3D1&expand=0&asi={asi}"
+URL_LOGIN = r"https://stud.zv.hs-heilbronn.de/qisstudent/rds?state=user&type=1&category=auth.login&startpage=portal.vm&breadCrumbSource=portal"
 USER_AGENT = r"Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36"
 
 ECTS_FIX = {
