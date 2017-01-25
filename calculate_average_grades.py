@@ -51,15 +51,19 @@ def main():
 
 def print_average_grade(exams):
     ects_total = 0
+    ects_total_graded = 0
     grades_total = 0
     
     print_header()
     
     for exam in exams:
-        if not exam["passed"] or exam["grade"] is None:
+        if not exam["passed"]:
             continue
         
-        grade = format_float(exam["grade"])
+        if exam["grade"]:
+            grade = format_float(exam["grade"])
+        else:
+            grade = "-"
         
         print("{} {} {}".format(
             exam["name"].ljust(COL1_WIDTH),
@@ -68,11 +72,14 @@ def print_average_grade(exams):
         ))
         
         ects_total += exam["ects"]
-        grades_total += exam["ects"] * exam["grade"]
+
+        if exam["grade"]:
+            ects_total_graded += exam["ects"]
+            grades_total += exam["ects"] * exam["grade"]
     
-    average = grades_total / ects_total
-    
+    average = grades_total / ects_total_graded
     average = format_float(average, 2)
+
     ects_total = format_float(ects_total)
     grades_total = format_float(grades_total)
     
