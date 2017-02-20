@@ -15,9 +15,7 @@ URL_GRADES = r"https://stud.zv.hs-heilbronn.de/qisstudent/rds?state=notenspiegel
 URL_LOGIN = r"https://stud.zv.hs-heilbronn.de/qisstudent/rds?state=user&type=1&category=auth.login&startpage=portal.vm&breadCrumbSource=portal"
 USER_AGENT = r"Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36"
 
-ECTS_FIX = {
-    281811: 5.0,
-}
+ECTS_FIX = {}
 
 jar = http.cookiejar.CookieJar()
 opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar))
