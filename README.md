@@ -21,3 +21,7 @@ It is possible to adjust wrong ECTS values on Linda by modifying the `ECTS_FIX` 
 
 ### New exam finder
 Run `python find_new_exams.py`. On the first run, the program will create an `exams.json` file containing all currently available exam information. If you run the command again, it will print any new exam results it finds on Linda. If it does not find any new exam results, the program will not output anything.
+
+License
+-------
+[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
