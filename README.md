@@ -1,6 +1,6 @@
 Linda Parser
 ============
-This program has a [port in Go](https://github.com/srhnsn/go-lindaparser).
+This program has a [port in Go](https://github.com/srhnsn/go-lindaparser) (but it is more difficult to deploy and has unfixed bugs 😅).
 
 Requirements
 ------------
